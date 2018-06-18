@@ -27,7 +27,7 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
     //重置密码
     Route::post('resetpassword','IndexController@reset');
     //后台首页
-    Route::get('homes','IndexController@homes')->name('homes')->middleware('auth');
+    Route::get('homes','HomesController@index');
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

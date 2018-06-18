@@ -90,10 +90,4 @@ class IndexController extends Controller
             return json_encode($msg);
         }
     }
-
-    //后台首页
-    public function homes()
-    {
-        return view('admin.index.homes');
-    }
 }
